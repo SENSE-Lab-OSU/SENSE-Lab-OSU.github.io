@@ -59,3 +59,6 @@ collections:
   people:
     output: true
     permalink: /people/:title/index.html
+
+#Exclusions
+exclude: "/misc"

@@ -1,0 +1,22 @@
+#Remove Data folder recursively for exclusions to apply
+misc/*
+
+#skip any README, .py or .gitkeep
+!*README*
+
+# Temporary OS files
+.DS_Store
+
+
+#manual log files
+*.log
+
+# Byte-compiled / optimized / DLL files
+__pycache__
+*.py[cod]
+*$py.class
+*.o
+*.elf
+*.hex
+*.d
+
