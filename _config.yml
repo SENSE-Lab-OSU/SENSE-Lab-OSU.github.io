@@ -9,8 +9,8 @@ description:        "this is a page for Konrad Kording lab, we are comptational 
 
 
 # URL
-url:                http://kordinglab.com
-baseurl:            
+#url:                http://kordinglab.com
+#baseurl:            
 #baseurl:            "" #For Root Domain
 permalink:          /:year/:month/:day/:title.html
 
@@ -26,18 +26,12 @@ nav:
     href:           "/"
   - name:           "about"
     href:           "/about"
-  - name:           "publications"
-    href:           "/publication"
   - name:           "people"
     href:           "/people"
-  - name:           "blog"
-    href:           "/blog"
-  - name:           "resources"
-    href:           "/resources"
 
 # Sass
-sass:
-  style:            :compressed
+#sass:
+#  style:            :compressed
 
 # Scopes
 defaults:
