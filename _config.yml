@@ -11,7 +11,7 @@ description:        "this is a page for Konrad Kording lab, we are comptational 
 # URL
 #url:                http://kordinglab.com
 #baseurl:            
-#baseurl:            "" #For Root Domain
+baseurl:            "SENSE-Lab-OSU.github.io" #For Root Domain
 permalink:          /:year/:month/:day/:title.html
 
 # Markdown
