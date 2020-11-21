@@ -1,0 +1,47 @@
+I"O<p>Purpose: To compile the original Fortran code of GLMNET to use it in Python which contains the Poisson link function that many people and me use in the lab.</p>
+
+<p>Requirements:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">git</code></li>
+  <li><code class="language-plaintext highlighter-rouge">f2py</code> (translator from fortran to python)</li>
+  <li><code class="language-plaintext highlighter-rouge">gfortran</code> (fortrain compiler)</li>
+  <li><code class="language-plaintext highlighter-rouge">scikit-learn</code> (for the example)</li>
+</ul>
+
+<p><strong>clone repository from github</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone https://github.com/dwf/glmnet-python
+</code></pre></div></div>
+
+<p><strong>change directory and compile</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd </span>glmnet-python
+<span class="nv">$ </span>python setup.py build
+</code></pre></div></div>
+
+<p><strong>compile fortran code</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd </span>glmnet/
+<span class="nv">$ </span>f2py <span class="nt">-c</span> <span class="nt">--fcompiler</span><span class="o">=</span>gnu95 <span class="nt">--f77flags</span><span class="o">=</span><span class="s1">'-fdefault-real-8'</span> <span class="nt">--f90flags</span><span class="o">=</span><span class="s1">'-fdefault-real-8'</span> glmnet.pyf glmnet.f
+</code></pre></div></div>
+
+<p><strong>test code by going to root of project</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ..
+</code></pre></div></div>
+
+<p><strong>and in IPython run this example to see if it works</strong></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">glmnet</span> <span class="kn">import</span> <span class="n">ElasticNet</span>
+<span class="kn">from</span> <span class="nn">cv</span> <span class="kn">import</span> <span class="n">CVGlmNet</span>
+<span class="kn">from</span> <span class="nn">sklearn.datasets.samples_generator</span> <span class="kn">import</span> <span class="n">make_regression</span>
+
+<span class="n">enet</span> <span class="o">=</span> <span class="n">ElasticNet</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="p">.</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">enet_cv</span> <span class="o">=</span> <span class="n">CVGlmNet</span><span class="p">(</span><span class="n">enet</span><span class="p">,</span> <span class="n">n_folds</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">make_regression</span><span class="p">(</span><span class="n">n_samples</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">n_features</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">n_informative</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">noise</span><span class="o">=</span><span class="mi">35</span><span class="p">)</span>
+<span class="n">enet_cv</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">plot</span>
+<span class="n">enet_cv</span><span class="p">.</span><span class="n">plot_oof_devs</span><span class="p">()</span>
+</code></pre></div></div>
+:ET

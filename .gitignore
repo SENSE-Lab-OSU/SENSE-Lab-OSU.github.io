@@ -4,7 +4,7 @@ misc/*
 #skip any README, .py or .gitkeep
 !*README*
 
-# Temporary OS files
+# Temporary macOS files
 .DS_Store
 
 

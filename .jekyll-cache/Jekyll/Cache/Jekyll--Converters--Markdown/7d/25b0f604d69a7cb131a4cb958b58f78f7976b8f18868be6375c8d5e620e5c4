@@ -1,0 +1,115 @@
+I"Š<p>We generally followed the instructions in <a href="https://github.com/saiprashanths/dl-setup">Setting up a Deep Learning Machine from Scratch</a>.</p>
+
+<h3 id="installing-nvidia-drivers">Installing NVidia Drivers</h3>
+
+<p>Before installing the drivers, make sure there are no nvidia drivers already installed by doing the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get --purge remove nvidia-*
+</code></pre></div></div>
+
+<p>And reboot. Then download NVidia drivers from <a href="http://www.geforce.com/drivers/results/105343">here</a> and install them according to instructions.</p>
+
+<h3 id="installing-cuda">Installing CUDA</h3>
+
+<p>First, install some AMD drivers that will be used by CUDA.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get install fglrx-updates
+</code></pre></div></div>
+
+<p>After installation, reboot the computer.</p>
+
+<p>Next, stop the SSH X11 forwarding by modifying /etc/ssh/sshd_config:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo nano /etc/ssh/sshd_config
+</code></pre></div></div>
+<p>Find the following line:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>X11Forwarding yes
+</code></pre></div></div>
+
+<p>and change it to:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>X11Forwarding no
+</code></pre></div></div>
+<p>After saving the changes, restart the ssh service by typing:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo service ssh restart
+</code></pre></div></div>
+
+<p>Now, stop the default X server by typing:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo service mdm stop
+</code></pre></div></div>
+
+<p>Now we can install CUDA. The latest supported version is 7.5 which can be downloaded from <a href="https://developer.nvidia.com/cuda-downloads">here</a>. Select Linux &gt; X86_64 &gt; Ubuntu &gt; 14.04 &gt; runfile (local). Follow the instructions on the page to complete the installation.</p>
+
+<p>After finishing the installation of CUDA, undo the change that you made to /etc/ssh/sshd_config, and restart the ssh server using <code class="language-plaintext highlighter-rouge">sudo service ssh restart</code>. Also, start the X server again: <code class="language-plaintext highlighter-rouge">sudo service mdm start</code></p>
+
+<h3 id="installing-cudnn">Installing cuDNN</h3>
+
+<p>Download cuDNN from <a href="https://developer.nvidia.com/cudnn">here</a>. Select a version which is compatible with CUDA. After downloading, do the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tar xvf &lt;DOWNLOADED FILE NAME&gt;
+$ cd cuda
+$ sudo cp */*.h /usr/local/cuda/include/
+$ sudo cp */libcudnn* /usr/local/cuda/lib64/
+$ sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
+</code></pre></div></div>
+
+<h2 id="software">Software</h2>
+
+<p>To install for all users</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo -i
+</code></pre></div></div>
+<p>then install package. <code class="language-plaintext highlighter-rouge">git clone</code> in <code class="language-plaintext highlighter-rouge">~\repos</code> if need.</p>
+
+<p>To install only for user then add <code class="language-plaintext highlighter-rouge">--user</code> at the end. E.g.:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python setup.py install --user
+</code></pre></div></div>
+
+<p>Here are some specific instructions:</p>
+
+<h5 id="theano">Theano</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ pip install theano
+</code></pre></div></div>
+
+<p>Edit/create <code class="language-plaintext highlighter-rouge">~/.theanorc</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[global]
+floatX = float32
+device = gpuX
+</code></pre></div></div>
+
+<p>choose as <code class="language-plaintext highlighter-rouge">gpuX</code> your assigned gpu, there will be random inspections. Grad students all share <code class="language-plaintext highlighter-rouge">gpu1</code>. <code class="language-plaintext highlighter-rouge">klab</code> uses <code class="language-plaintext highlighter-rouge">gpu0</code></p>
+
+<h5 id="tensorflow"><a href="https://www.tensorflow.org/versions/r0.10/get_started/os_setup.html#using-pip">Tensorflow</a></h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.10.0rc0-cp27-none-linux_x86_64.whl
+$ pip install --ignore-installed --upgrade $TF_BINARY_URL
+</code></pre></div></div>
+
+<p>Note: right now <code class="language-plaintext highlighter-rouge">tensorflow</code> is not working because we are using <code class="language-plaintext highlighter-rouge">cuDNN v5</code>. Either wait for it to be compatible or downgrade <code class="language-plaintext highlighter-rouge">cuDNN</code> to <code class="language-plaintext highlighter-rouge">v4</code> when we really need to use tensorflow (donâ€™t do it). Or try to compile/install <code class="language-plaintext highlighter-rouge">tensorflow</code> <a href="https://www.tensorflow.org/versions/r0.10/get_started/os_setup.html#installing-from-sources">from source</a> (good luck with that).</p>
+
+<h5 id="keras">Keras</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ pip install keras
+</code></pre></div></div>
+
+<p>See <a href="https://keras.io/backend/">here</a> to choose <code class="language-plaintext highlighter-rouge">tensorflow</code> and <code class="language-plaintext highlighter-rouge">theano</code> in <code class="language-plaintext highlighter-rouge">Keras</code></p>
+
+<h5 id="xgboost"><a href="https://xgboost.readthedocs.io/en/latest/build.html#building-on-ubuntu-debian">XGBoost</a></h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git clone --recursive https://github.com/dmlc/xgboost
+$ cd xgboost; make -j4
+$ cd python-package
+$ python setup.py install
+</code></pre></div></div>
+
+<h5 id="opencv">Opencv</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ conda install opencv
+</code></pre></div></div>
+:ET

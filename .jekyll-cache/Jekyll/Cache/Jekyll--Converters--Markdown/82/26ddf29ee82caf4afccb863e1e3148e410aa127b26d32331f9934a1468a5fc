@@ -1,0 +1,63 @@
+I"�<p>To achieve the goal in different scale of Measurement:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Goal</th>
+      <th style="text-align: left">Interval/ratio</th>
+      <th>Ordinal</th>
+      <th>Nominal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>Describe one group</strong></td>
+      <td style="text-align: left">Mean, standard deviation</td>
+      <td>Median; interquartile range</td>
+      <td>proportion</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Compare one group to <br />a hypothetical value</strong></td>
+      <td style="text-align: left">One-sample t-test; Z-test:<br /> (for true variance known; <br />or very big sample size)</td>
+      <td>Wilcoxon signed rank test</td>
+      <td>Chi-square test</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Compare two paired <br />groups</strong></td>
+      <td style="text-align: left">Paired t-test</td>
+      <td>Wilcoxon signed rank test</td>
+      <td>McNemar’s test</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Compare two unpaired <br />groups</strong></td>
+      <td style="text-align: left">Unpaired/ two-sample t-test</td>
+      <td>Mann-Whitney U test</td>
+      <td>Chi-square test</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Compare three or more p<br />aired groups</strong></td>
+      <td style="text-align: left">ANOVA repeated measures</td>
+      <td>Friedman test</td>
+      <td>Cochraine Q</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Compare three or more <br />unpaired groups</strong></td>
+      <td style="text-align: left">ANOVA</td>
+      <td>Kruskal-Wallis</td>
+      <td>Chi-square test</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Quantify association <br />between 2 variables</strong></td>
+      <td style="text-align: left">Pearson correlation</td>
+      <td>Spearman correlation</td>
+      <td>Contigency coefficients</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Predict value from <br />another measured <br />variable</strong></td>
+      <td style="text-align: left">Simple linear regression</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+:ET

@@ -1,0 +1,163 @@
+I",<h1 id="introduction-to-lab-resources">Introduction to Lab Resources</h1>
+
+<h2 id="local-computational-resources">Local Computational Resources</h2>
+
+<p>We currently have three local machines named Bleen, Dolores, and Quadcorn.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>CPU</th>
+      <th>GPU</th>
+      <th>RAM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dolores</td>
+      <td>Ubuntu</td>
+      <td>i9-7920X @ 2.90 GHz - 12 cores</td>
+      <td>3x GTX 1080 Ti, 1x RTX 2080 Ti</td>
+      <td>94 Gb</td>
+    </tr>
+    <tr>
+      <td>Bleen</td>
+      <td>Ubuntu</td>
+      <td>i7-6850k @ 3.60GHz - 6 cores</td>
+      <td>4x GTX 1080 Ti</td>
+      <td>64 GB</td>
+    </tr>
+    <tr>
+      <td>Quadcorn</td>
+      <td>Mint</td>
+      <td>i7-5960X @ 3.00GHz - 8 Cores</td>
+      <td>3x GTX 1080 Ti, 1x RTX 2080 Ti</td>
+      <td>64 Gb</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="getting-started">Getting Started</h3>
+
+<p><strong>Getting an account</strong></p>
+
+<p>You can either email a senior lab member for help, or, if you know some bash, create an account yourself.
+First, ask around to get the password to the admin account. Type <code class="language-plaintext highlighter-rouge">useradd my_username</code> to create
+and account, then <code class="language-plaintext highlighter-rouge">passwd my_username</code> to make a password. Make sure it’s a good one so we don’t get hacked.
+(These servers are on the web and vulnerable to password-guessing hacks.)
+Finally, make sure to copy a <code class="language-plaintext highlighter-rouge">.profile</code> and <code class="language-plaintext highlighter-rouge">.bash_profile</code> file from an existing user to steal their setup (with Anaconda, etc.)</p>
+
+<p><strong>Setting Up Anaconda</strong></p>
+
+<p>Anaconda is a python environment manager. This allows separate users to easily have different versions of python as well as different versions of packages.
+Individual users can also create separate environments if different projects have conflicting version needs.</p>
+
+<p>All the servers already have a system-wide Anaconda installed. Test to make sure you are seeing it
+by typing <code class="language-plaintext highlighter-rouge">which conda</code>. See which environments exist by typing <code class="language-plaintext highlighter-rouge">conda-env list</code>.</p>
+
+<p>These environments are good if you need standard things (Pytorch, etc.).
+If you need to install your own software, you should create an environment of your own.</p>
+
+<p><a href="https://docs.anaconda.com/anaconda/install/linux/">installation instructions</a></p>
+
+<p><a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">creating and managing environments</a></p>
+
+<p><strong>Useful Commands</strong></p>
+
+<p><a href="http://kordinglab.com/2018/09/20/bleen-quadcorn-commands.html">See here</a></p>
+
+<h3 id="common-issues">Common Issues</h3>
+
+<p><strong>Dolores</strong></p>
+
+<p>Spontaneous restarting: A bug in intel’s CPU sometimes causes Dolores to restart spontaneously when if Turbo Mode is enabled. To prevent this, run the following command everytime the machine is booted up:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "1" | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
+</code></pre></div></div>
+
+<p>To permanently disable do the following:</p>
+
+<p>Disable Turbo for i9 CPU</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Boot up machine
+
+
+Press DEL or F2 (repeatedly)  to enter the BIOS
+
+
+Enter Advanced Mode (F7)
+
+
+Navigate to Advanced  in the horizontal options bar
+
+
+Press enter on CPU Configuration
+
+
+Scroll down to the bottom and enter into CPU Power Management Configuration
+
+
+Navigate to Turbo Mode and press enter and change to Disabled
+</code></pre></div></div>
+
+<h3 id="workflow">Workflow</h3>
+
+<p><strong>Screen</strong></p>
+
+<p>The screen function is used to manage virtual terminals that can run in the background. These virtual terminals continue to persist after you disconnect from the ssh terminal. That allows you to run long programs without needing to stay connected, as well as run jupyter notebook sessiosn that won’t crash if you disconnect. <a href="https://www.gnu.org/software/screen/manual/screen.html">Here is a page with extensive documentation</a>.</p>
+
+<p>In the screen documentation, “C-“ refers to clicking “Ctrl+c”. For example, the command “C-a” means “Click ‘Ctrl+c’ then click ‘a’”.</p>
+
+<p>Basics of Screen:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>screen -S &lt;name of screen&gt;
+</code></pre></div></div>
+
+<p>The -S option allows you to create a new screen, and give it a name. This makes it easy to reconnect afterwards.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C-a
+</code></pre></div></div>
+
+<p>C-a is the command to detatch from the screen and return to your base terminal.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>screen -r &lt;name of screen&gt;
+</code></pre></div></div>
+
+<p>The -r command allows you to reconnect to a screen with the name you have given it. To get a list of currently open and running screens, type “screen -r” without a name.</p>
+
+<p>Occasionally a screen will be listed as “attached” while you are actually not connected to it. In that case use the -d command to attach to screens that for some reason remain listed as attached.</p>
+
+<p><strong>Jupyter Notebook/Lab</strong></p>
+
+<p>I recommend running notebook sessions within a virtual terminal from the screen function. That way if you momentarily lose connection, your session won’t be closed.</p>
+
+<p>To start a jupyter notebook or lab session type:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter notebook --no-browser --port=&lt;XXXX&gt; or
+
+jupyter lab --no-browser --port=&lt;XXXX&gt;
+</code></pre></div></div>
+
+<p>where XXXX is an unused port number.<br />
+Next on your local machine’s terminal type:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh -N -f -L localhost:YYYY:localhost:XXXX ribeiro@dolores.seas.upenn.edu
+</code></pre></div></div>
+
+<p>Use the same XXXX and above. YYYY is any port number available on your local machine.</p>
+
+<p>Finally, open your browser and connect to ‘localhost:YYYY’. You may be prompted to input a password, which is found on the screen in which you launched the jupyter session.</p>
+
+<p><strong>Matlab</strong></p>
+
+<h3 id="best-practices">Best Practices</h3>
+
+<p>Please be mindful of the storage you are using, especially in the home folder. Most machines have seperate hardrives, generally under a folder named /data<X>, where you can store large datasets. Additionally, if you are finished with a project on home, it is best to move it to one of these other drives. Use the command</X></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df -h to get a list of all drives and their available space.
+</code></pre></div></div>
+
+<h3 id="miscellaneous-tips-and-tricks">Miscellaneous Tips and Tricks</h3>
+:ET

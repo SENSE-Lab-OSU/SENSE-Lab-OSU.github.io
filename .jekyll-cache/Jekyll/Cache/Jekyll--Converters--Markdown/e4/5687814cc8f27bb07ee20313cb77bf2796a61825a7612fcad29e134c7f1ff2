@@ -1,0 +1,205 @@
+I"�D<p><img width="300" src="/images/people/luca_lonini_2.jpg" data-action="zoom" /></p>
+
+<p><em>Postdoctoral Fellow</em><br /></p>
+
+<p>Northwestern University - Physical Medicine and Rehabilitation<br />
+Shirley Ryan Ability Lab<br />
+355 E Erie St., Suite 11-1401<br />
+Chicago IL, 60611<br />
+<i class="fa fa-mobile"></i> (312) 238-1619<br />
+<i class="fa fa-envelope-o"></i> <code class="language-plaintext highlighter-rouge">llonini@ricres.org</code><br /></p>
+
+<p><i class="fa fa-twitter"></i> <a href="https://twitter.com/LucaLonini">@LucaLonini</a><br />
+<i class="fa fa-github"></i> <a href="https://github.com/Luke3D">GitHub</a><br />
+<a href="https://www.linkedin.com/in/lucalonini"><i class="fa fa-linkedin-square"></i> LinkedIn</a><br />
+<a href="https://scholar.google.it/citations?user=xxDk3-EAAAAJ&amp;hl=en"><i class="fa fa-google"></i> Google Scholar</a></p>
+
+<hr />
+
+<h3 id="about">About</h3>
+
+<p>I am broadly interested in the application of machine learning and data science methods to augment or improve life. I am currently working on quantifying patient outcomes in clinical rehabilitation using wearables and smartphones data. The overarching goal of this research is to: 1) provide clinicians with quantitative data to tailor rehabilitation programs; 2) understand the benefits of new rehab technologies in terms of functional recovery (e.g. does an advanced prosthetic leg allow a patient to walk more?).</p>
+
+<p>I received my MSc in Biomedical Engineering from University Campus Bio-medico of Rome, Italy and my PhD in Computer Science from Goethe University of Frankfurt, Germany.</p>
+
+<p>During my MSc I worked on a model of the <a href="http://dspace.mit.edu/openaccess-disseminate/1721.1/55996">acquisition and retention of motor tasks</a> to optimize robotic neuro-rehabilitation (in collaboration with the <a href="http://newmanlab.mit.edu/">Newman Lab at MIT</a>). Throughout my PhD I worked on a method for <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3819528/">unsupervised learning of active stereo-vision</a> on the humanoid robot iCub using Sparse Coding and Reinforcement Learning. Here is a <a href="https://www.youtube.com/watch?v=BuA6OU2VdhE&amp;feature=youtu.be">video</a> of the result.</p>
+
+<hr />
+
+<h3 id="highlights">Highlights</h3>
+
+<p><br /></p>
+
+<p>Jul 2017: Excited for having being selected to attend the Kellogg <a href="http://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/bussci.aspx">“Business for Science and Engineers”</a>
+course at Northwestern.</p>
+
+<p>Jun 2017: Extended Abstract “<strong>Automatic Detection of Spasticity from Flexible Wearable Sensors</strong>” accepted at UbiComp ‘17 <a href="http://ubicomp.org/ubicomp2017/index.html">Link</a></p>
+
+<p>Jun 2017: Our new paper “<strong>Activity Recognition in Individuals Walking with Assistive Devices: The Benefits of Device-Specific Models</strong>” has been accepted in JMIR Rehabilitation and Assistive Technologies.</p>
+
+<p>Apr 2017: I Co-organized the <strong><a href="http://www.data-science-career-evening.org/">Northwestern Data Science Career Evening Workshop</a></strong>, which was attended by more than 100 people and 7 companies and training program and partly supported by a Professional Development awarded by <a href="http://www.tgs.northwestern.edu/funding/fellowships-and-grants/internal-grants/professional-development-grant.html">The Graduate School</a> at Northwestern</p>
+
+<p>Nov 2016: Invited talk at the <a href="https://www.ihmc.us/research/">IHMC</a> in Penscola, FL on <strong>“Quantifying Rehabilitation Outcomes using wearables and smartphones data”</strong> <a href="https://www.youtube.com/watch?v=kQz4YQbaZVY">Video</a></p>
+
+<p>Sep 2016: Our paper <strong>“Voodoo Machine Learning for Clinical Predictions”</strong> is on BioRxiv <a href="http://biorxiv.org/content/biorxiv/early/2016/06/19/059774.full.pdf">PDF</a>, <a href="https://biorxiv.altmetric.com/details/8885167">altmetric score</a></p>
+
+<p>Jun 2016: Our paper <strong>“Activity Recognition in Patients with Lower Limb Impairments: Do we need training data from each patient?”</strong> has been accepted at <a href="http://ieeexplore.ieee.org/abstract/document/7591425/">EMBC 2016</a>! This year’s topic is <em>“Empowering Individual Healthcare Decisions through Technology”</em><br /></p>
+
+<p>Mar 2016: We convert clinical scores into Bayesian surprise for evaluating spinal cord injury walking skills with exoskeletons. See our <a href="http://download.springer.com/static/pdf/450/art%253A10.1186%252Fs12984-016-0142-9.pdf?originUrl=http%3A%2F%2Fjneuroengrehab.biomedcentral.com%2Farticle%2F10.1186%2Fs12984-016-0142-9&amp;token2=exp=1462152638~acl=%2Fstatic%2Fpdf%2F450%2Fart%25253A10.1186%25252Fs12984-016-0142-9.pdf*~hmac=989f7a158dab80ecdb2ff30c0955308e8b66302e906fff4f27864772fcd5ee58">paper on JNER</a></p>
+
+<hr />
+
+<h3 id="projects">Projects</h3>
+<p><br /></p>
+
+<p><em>Using wearable accelerometers to detect everyday activities in patients walking with a leg brace</em><br /></p>
+
+<figure><center>
+  <img src="/images/others/AR2.jpg" width="=1000" height="200" />
+</center></figure>
+<p><sup> image credit: Aakash Gupta</sup></p>
+
+<p>Walking assistive devices are useful when they enable individuals with disabilities to function better in daily life. Here we use machine learning to identify functional daily activities from wearable sensors data. Such measurement of daily activities can inform clinicians and researchers on the effectiveness of novel assistive devices. Since different assistive devices are used by each individual, we investigate whether we need to train brace-specific, patient-specific or population-specific activity recognition classifiers.</p>
+
+<p><em><strong>Related Publications</strong></em> <br /></p>
+
+<p><sup><strong>Activity Recognition in Individuals Walking with Assistive Devices: The Benefits of Device-Specific Models</strong><br /> </sup>
+<sup> Luca Lonini, Aakash Gupta, Susan Deems-Dluhy, Shenan Hoppe-Ludwig, Konrad Kording ,Arun Jayaraman </sup> <br />
+<sup><em>JMIR Rehabilitation and Assistive Technologies, accepted</em></sup></p>
+
+<p><sup><strong>Activity Recognition in Patients with Lower Limb Impairments: Do we need training data from each patient?</strong></sup> <br />
+<sup><strong>Luca Lonini</strong>, Aakash Gupta, Konrad Kording, Arun Jayaraman</sup><br />
+<sup><em>Engineering in Medicine and Biology Society (EMBC)</em>, 2016 IEEE 38th Annual International Conference of the (pp. 3265-3268). <a href="http://ieeexplore.ieee.org/abstract/document/7591425/">PDF</a></sup></p>
+
+<p><br /></p>
+
+<p><em>Fall detection in lower limb amputees using mobile phones</em><br /></p>
+
+<figure><center>
+  <img src="/images/others/Falls.png" width="500" />
+</center></figure>
+
+<p>Falls are a common occurrence in the elderly and people with lower-limb amputations, and amongst elderly are the primary cause of injury-related death. Detecting falls and understanding the context where they happen can guide prevention strategies as well as alerting emergency services automatically when needed. Here we train machine learning classifiers to detect falls from mobile phones inertial and GPS sensors data. We train our classifiers using in-lab collected data on simulated falls and test our models on data continuously collected on patients and able-bodied individuals during their daily activities.</p>
+
+<p><em><strong>Related Publications</strong></em> <br /></p>
+
+<p><sup><strong>Fall Detection in Individuals with Lower-limb Amputation using Mobile Phones: Machine Learning Enhances Robustness for Real-World Applications</strong><br /> </sup>
+<sup> Nicholas Shawen*, Luca Lonini*, Chaithanya Krishna Mummidisetty, Ilona Shparii, Mark V Albert, Konrad Kording, Arun Jayaraman (*equal contribution) </sup> <br />
+<sup><em>JMIR mHealth and uHealth, accepted</em></sup></p>
+
+<p><br /></p>
+
+<p><em>Automatic Detection of Spasticity in individuals with Stroke</em><br /></p>
+
+<figure><center>
+  <img src="/images/others/Spasticity2.jpg" width="500" />
+</center></figure>
+
+<p>Spasticity is a common set of symptoms in individuals who had a neural injury. It can results in muscle stiffness or uncontrollable arm or leg movements, which can strongly limit everyday activities. Most information on spasticity symptoms is obtained through patient self-report or from in-lab exams, which require dedicated lab equipment and trained clinicians. Using data from flexible wearable EMG sensors, we are working on the automatic classification of the electrical activity of muscles into normal and spastic, with the ultimate goal of long-term quantitative monitoring of such condition.</p>
+
+<p><em><strong>Related Publications</strong></em> <br /></p>
+
+<p><sup> <strong>Automatic Detection of Spasticity from Flexible Wearable Sensors</strong><br /> </sup>
+<sup>Luca Lonini, Nicholas Shawen, Roozbeh Ghaffari, John Rogers, Arun Jayaraman</sup> <br />
+<sup><em>Accepted at UbiComp 2017</em></sup></p>
+
+<hr />
+
+<h3 id="journal-publications">Journal Publications</h3>
+
+<p><br />
+<strong>Fall Detection in Individuals with Lower-limb Amputation using Mobile Phones: Machine Learning Enhances Robustness for Real-World Applications</strong><br />
+<sup> Nicholas Shawen*, <strong>Luca Lonini</strong>*, Chaithanya Krishna Mummidisetty, Ilona Shparii, Mark V Albert, Konrad Kording, Arun Jayaraman (*equal contribution) </sup> <br />
+<em>JMIR mHealth and uHealth, accepted</em>.</p>
+
+<p><strong>Activity Recognition in Individuals Walking with Assistive Devices: The Benefits of Device-Specific Models</strong><br />
+<sup> Luca Lonini, Aakash Gupta, Susan Deems-Dluhy, Shenan Hoppe-Ludwig, Konrad Kording ,Arun Jayaraman </sup> <br />
+<em>JMIR Rehabilitation and Assistive Technologies, 2017 4(2)</em>.</p>
+
+<p><strong>Sensor Fusion to Infer Locations of Standing and Reaching within the Home in Incomplete Spinal Cord Injury</strong><br />
+ <sup> Lonini L, Reissman T, Ochoa MJ, Mummidisetty CK, Kording K, Jayaraman A. </sup> <br />
+<em>American Journal of Physical Medicine &amp; Rehabilitation, 2017 Apr 5. doi: 10.1097/PHM.0000000000000750</em> <a href="https://insights.ovid.com/pubmed?pmid=28379922">PDF</a></p>
+
+<p><strong>Discussion on using and understanding cross-validation strategies</strong> <br />
+<sup> MA Little, G Varoquaux, S Saeb, <strong>L Lonini</strong>, A Jayaraman, DC Mohr, K Körding, </sup> <br />
+<em>GigaScience. 2017 May 1;6(5):1-6. doi: 10.1093/gigascience/gix020</em> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5441396/pdf/gix020.pdf">PDF</a></p>
+
+<p><strong>The need to approximate the use-case in clinical machine learning</strong> <br />
+<sup>S Saeb*, <strong>L Lonini</strong>*, A Jayaraman, DC Mohr, K Körding, (*equal contribution) </sup> <br />
+<em>GigaScience. 2017 May; 6(5): 1–9. doi:  10.1093/gigascience/gix019</em> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5441397/pdf/gix019.pdf">PDF</a></p>
+
+<p><strong>Humans Can Integrate Augmented Reality Feedback in Their Sensorimotor Control of a Robotic Hand</strong>
+<sup>Clemente F, Dosen S, <strong>Lonini L</strong>, Markovic M, Farina D, Cipriani C. </sup> <br />
+<em>IEEE Transactions on Human-Machine Systems</em> 2016 Oct 11 <a href="http://ieeexplore.ieee.org/abstract/document/7588033/">PDF</a></p>
+
+<p><strong>Vodoo Machine Learning for Clinical Predictions</strong> <br />
+<sup> S.Saeb*, <strong>L.Lonini</strong>*, A.Jayaraman, D.Mohr, K.Kording (*equal contribution) </sup> <br />
+<em>BioRxiv</em>, 2016 <a href="http://biorxiv.org/content/biorxiv/early/2016/06/19/059774.full.pdf">PDF</a>, <a href="https://biorxiv.altmetric.com/details/8885167">altmetric score</a></p>
+
+<p><strong>Accelerometry-enabled measurement of walking performance with a robotic exoskeleton: a pilot study</strong><br />
+<sup><strong>Luca Lonini</strong>, Nicholas Shawen, Kathleen Scanlan, William Z. Rymer, Konrad P.Kording, Arun Jayaraman</sup> <br />
+<em>Journal of NeuroEngineering and Rehabilitation</em>,13(1),2016
+DOI: 10.1186/s12984-016-0142-9 1. <a href="http://download.springer.com/static/pdf/450/art%253A10.1186%252Fs12984-016-0142-9.pdf?originUrl=http%3A%2F%2Fjneuroengrehab.biomedcentral.com%2Farticle%2F10.1186%2Fs12984-016-0142-9&amp;token2=exp=1462152638~acl=%2Fstatic%2Fpdf%2F450%2Fart%25253A10.1186%25252Fs12984-016-0142-9.pdf*~hmac=989f7a158dab80ecdb2ff30c0955308e8b66302e906fff4f27864772fcd5ee58">PDF</a></p>
+
+<p><strong>Self-calibrating smooth pursuit through active efficient coding</strong><br />
+<sup>Céline Teulière, S Forestier, <strong>L Lonini</strong>, C Zhang, Y Zhao, B Shi, J Triesch</sup><br />
+<em>Robotics and Autonomous Systems</em>,71,pp.3-12,2015 <a href="http://www.sciencedirect.com/science/article/pii/S0921889014002486">PDF</a></p>
+
+<p><strong>Robust active binocular vision through intrinsically motivated learning</strong><br />
+<sup><strong>Lonini, L.</strong>, Forestier, S., Teulière, C., Zhao, Y., Shi, B. E., &amp; Triesch, J.</sup><br />
+<em>Frontiers in Neurorobotics</em>, 7, 2013
+ <a href="http://journal.frontiersin.org/article/10.3389/fnbot.2013.00020/full">PDF</a>, <a href="https://www.youtube.com/watch?v=hcbxzgrYdlo&amp;feature=youtu.be">VIDEO</a><br /></p>
+
+<p><strong>An internal model for acquisition and retention of motor learning during arm reaching</strong><br />
+<sup><strong>Lonini, L.</strong>, Dipietro, L., Zollo, L., Guglielmelli, E. and Krebs, H.I.</sup><br />
+<em>Neural computation</em>, 21(7), pp.2009-2027, 2009 <a href="http://dspace.mit.edu/openaccess-disseminate/1721.1/55996">PDF</a></p>
+
+<p><strong>Dispensing an enzyme-conjugated solution into an ELISA plate by adapting ink-jet printers</strong><br />
+<sup><strong>Lonini, L.</strong>, Accoto, D., Petroni, S. and Guglielmelli, E.</sup><br />
+<em>Journal of biochemical and biophysical methods</em>, 70(6), pp.1180-1184, 2008 <a href="http://www.sciencedirect.com/science/article/pii/S0165022X0700108X">PDF</a></p>
+
+<hr />
+
+<h3 id="conference-papersabstracts">Conference Papers/Abstracts</h3>
+
+<p><strong>Automatic Detection of Spasticity from Flexible Wearable Sensors</strong><br />
+<sup><strong>Luca Lonini</strong>, Nicholas Shawen, Roozbeh Ghaffari, John Rogers, Arun Jayaraman</sup> <br />
+<em>Accepted at UbiComp 2017</em></p>
+
+<p><strong>Activity Recognition in Patients with Lower Limb Impairments: Do we need training data from each patient?</strong><br />
+<sup><strong>Luca Lonini</strong>, Aakash Gupta, Konrad Kording, Arun Jayaraman</sup><br />
+<em>Engineering in Medicine and Biology Society (EMBC)</em>, 2016 IEEE 38th Annual International Conference of the (pp. 3265-3268). <a href="http://ieeexplore.ieee.org/abstract/document/7591425/">PDF</a></p>
+
+<p><strong>Subjective Fatigue is Associated with Higher Resting Energy Expenditure Following Traumatic Brain Injury</strong><br />
+<sup>David Ripley, <strong>Luca Lonini</strong>, Eric Larson, Korak Sarkar, Sangeeta Patel</sup><br />
+<em>PM&amp;R</em>,7(9),S97,2016</p>
+
+<p><strong>The “Internet Of Things” to Quantify Upper Limb Prosthetic Use: A Novel Outcome Tool</strong><br />
+<sup><strong>L. Lonini</strong> and A. Jayaraman</sup><br />
+Podium presentation <em>Myoelectric Control Symposium (MEC) ‘14</em>, Aug 18-22, 2014, Fredericton, NB, Canada <a href="http://www.unb.ca/conferences/mec/">Program</a></p>
+
+<p><strong>Autonomous learning of active multi-scale binocular vision</strong><br />
+<sup><strong>Lonini, L.</strong>, Zhao, Y., Chandrashekhariah, P., Shi, B. E., &amp; Triesch, J.</sup><br />
+in <em>Development and Learning and Epigenetic Robotics (ICDL)</em>, 2013 IEEE Third Joint International Conference (pp. 1-6)
+<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&amp;arnumber=6652541">PDF</a>, <a href="https://www.youtube.com/watch?v=BuA6OU2VdhE&amp;feature=youtu.be">VIDEO</a><br /></p>
+
+<p><strong>Learning efficient representations of stereo-disparity perception and vergence movements using the iCub robot</strong><br />
+<sup><strong>L. Lonini</strong> and J. Triesch</sup><br />
+<em>DGR-Tage 2012</em> Technical University Berlin, 6-7 September 2012
+<a href="http://dgr.robotics.tu-berlin.de/index.php/program">Program</a><br /></p>
+
+<p><strong>A computational model of the effects of training schedules in neurorehabilitation</strong><br />
+<sup><strong>L Lonini</strong>, L Dipietro, L Zollo, E Guglielmelli, HI Krebs</sup><br />
+Abstracts of the 14th <em>European Congress of Clinical Neurophysiology</em>, Volume 122, Supplement 1, June 2011, Pages S177
+<a href="http://www.sciencedirect.com/science/article/pii/S1388245711606408">PDF</a><br /></p>
+
+<p><strong>ODEs model of foreign body reaction around peripheral nerve implanted electrode</strong><br />
+<sup>G Di Pino, D Formica, <strong>L Lonini</strong>, D Accoto, A Benvenuto, S Micera, PM Rossini, E Guglielmelli</sup><br />
+<em>Engineering in Medicine and Biology Society (EMBC)</em>, 2010, pp. 1543-1546, Annual International Conference of the IEEE
+<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5626825">PDF</a><br /></p>
+
+<p><strong>Incremental learning control of the DLR-HIT-Hand II during interaction tasks</strong><br />
+<sup>Alessio Alessi, Loredana Zollo, <strong>Luca Lonini</strong>, Rosanna De Falco, Eugenio Guglielmelli</sup><br />
+<em>Engineering in Medicine and Biology Society (EMBC)</em>, 2010, pp. 3194-3197, Annual International Conference of the IEEE
+<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5627411">PDF</a><br /></p>
+:ET
