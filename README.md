@@ -1,6 +1,6 @@
 # SENSE-Lab-OSU.github.io
 The website for SENSE Lab at The Ohio State University
-This repository is inspired from [Kording lab page](http://kordinglab.com/). We use Jekyll to run our Github page.
+This repository (and README) is inspired from [Kording lab page](http://kordinglab.com/). We use Jekyll to run our Github page.
 
 ## Run the page locally using Jekyll
 

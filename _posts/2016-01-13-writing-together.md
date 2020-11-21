@@ -1,9 +1,9 @@
 ---
 title: Writing together
-categories: scientists
-header-img: images/post/dino.jpg
+categories: kording
 ---
 
+by Konrad Kording, Dept. of Bioengineering and Dept. of Neuroscience University of Pennsylvania.
 
 ### Let's write together
 

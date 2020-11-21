@@ -1,5 +1,6 @@
 #Remove Data folder recursively for exclusions to apply
 misc/*
+_site/*
 
 #skip any README, .py or .gitkeep
 !*README*

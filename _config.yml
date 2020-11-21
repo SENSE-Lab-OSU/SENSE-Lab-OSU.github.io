@@ -5,7 +5,7 @@ description:        "This is the home-page for Ertin's SENSE Lab, we are comptat
 
 
 # URL
-url:                http://SENSE-Lab-OSU.github.io
+url:                https://sense-lab-osu.github.io
 baseurl:            
 #baseurl:            "" #For Root Domain
 permalink:          /:year/:month/:day/:title.html
@@ -61,3 +61,15 @@ collections:
   people:
     output: true
     permalink: /people/:title/index.html
+
+
+# Reading Files
+include:
+exclude:
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - _drafts
+keep_files:
+  - .git

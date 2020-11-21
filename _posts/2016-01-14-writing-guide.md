@@ -1,7 +1,6 @@
 ---
 title: Extensive writing guide by my friend Liz Moyer
-categories: scientists
-header-img: images/post/dino4.jpeg
+categories: kording
 ---
 
 by Elisabeth Moyer, Dept. of the Geophysical Sciences, University of Chicago, 3/24/2014

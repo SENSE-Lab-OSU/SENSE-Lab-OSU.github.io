@@ -1,8 +1,8 @@
 ---
 title: Being productive in the lab
-categories: students
-header-img: images/post/dino4.jpeg
+categories: kording
 ---
+by Konrad Kording, Dept. of Bioengineering and Dept. of Neuroscience University of Pennsylvania.
 
 **How to be productive in the Bayesian Behavior lab**
 

@@ -1,10 +1,10 @@
 ---
 title: Software in Quadcorn
 description: List of main software installed and how to install it
-categories: blog
-header-img: images/post/dino2.jpg
+categories: kording
 ---
 
+by Konrad Kording, Dept. of Bioengineering and Dept. of Neuroscience University of Pennsylvania.
 
 We generally followed the instructions in [Setting up a Deep Learning Machine from Scratch](https://github.com/saiprashanths/dl-setup).
 

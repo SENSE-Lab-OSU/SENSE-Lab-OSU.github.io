@@ -1,9 +1,10 @@
 ---
 title: Screen and Tunneling
 description: How to tunnel and how to use screen
-categories: blog
-header-img: images/post/dino3.jpg
+categories: kording
 ---
+
+by Konrad Kording, Dept. of Bioengineering and Dept. of Neuroscience University of Pennsylvania.
 
 ## Screen
 
