@@ -1,6 +1,6 @@
 ---
 name: Devan Mallory
-position: undergradstudent
+position: undergrad
 avatar: devan_mallory.jpg
 
 joined: 2020
