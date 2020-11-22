@@ -4,14 +4,14 @@ permalink: /resources/
 ---
 
 
-{% assign reference_types = "scientists|students" | split: "|" %}
+{% assign reference_types = "researchers|students" | split: "|" %}
 
 {% for type in reference_types %}
 
-{% if type == 'scientists' %}
-### **For scientists**
+{% if type == 'researchers' %}
+### **For researchers**
  {% elsif type == 'students' %}
-### **For students, lab members**
+### **For students and lab members**
 {% endif %}
 
 <div class="content list">

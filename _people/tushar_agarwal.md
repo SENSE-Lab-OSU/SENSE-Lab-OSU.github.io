@@ -1,6 +1,6 @@
 ---
 name: Tushar Agarwal
-position: gradstudent
+position: grad
 avatar: tushar_agarwal.jpg
 twitter: tu_curious
 joined: 2018
