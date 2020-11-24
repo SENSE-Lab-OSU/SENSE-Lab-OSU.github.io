@@ -64,7 +64,7 @@ collections:
 
 
 # Reading Files
-include:
+include: []
 exclude:
   - .asset-cache
   - .bundle

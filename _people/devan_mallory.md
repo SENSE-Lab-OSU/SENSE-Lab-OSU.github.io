@@ -25,7 +25,7 @@ allow medical research to improve immensly. I work as an undergraduate research 
 
 ### Research Interests
 
-Concepts: Machine Learning, Embedded Systems, Neuromorphics, Symbolic AGI (GOFAI)
+Concepts: Machine Learning, Embedded Systems, Neuromorphics, Symbolic AGI (GOFAI) <br>
 Broad Application Areas: Healthcare and Iot Medical Devices
 
 <hr>

@@ -26,7 +26,7 @@ I like to learn intriguing new things all the time. I have always been intereste
 
 ### Research Interests
 
-Concepts: Machine Learning, Bayesian Deep Learning, Signal Processing, Compressive Sensing.
+Concepts: Machine Learning, Bayesian Deep Learning, Signal Processing, Compressive Sensing. <br>
 Broad Application Areas: Healthcare, Climate Change, Social welfare.
 
 <hr>

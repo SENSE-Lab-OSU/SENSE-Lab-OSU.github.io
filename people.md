@@ -38,7 +38,7 @@ permalink: /people/
 {% if role != 'alumni' %}
 <div class="content list people">
   {% for profile in people_sorted %}
-    {% if profile.position contains role %}
+    {% if profile.position == role %}
       <div class="list-item-people">
         <p class="list-post-title">
           {% if profile.avatar %}
