@@ -8,7 +8,8 @@ description:        "This is the home-page for Ertin's SENSE Lab, we are comptat
 url:                https://sense-lab-osu.github.io
 baseurl:            
 #baseurl:            "" #For Root Domain
-permalink:          /:year/:month/:day/:title.html
+permalink:          /:categories/:title/
+#permalink:          /:year/:month/:day/:title.html
 
 # Markdown
 markdown:           kramdown
@@ -23,7 +24,7 @@ nav:
   - name:           "about"
     href:           "/about"
   - name:           "publications"
-    href:           "/publication"
+    href:           "/publications"
   - name:           "people"
     href:           "/people"
   - name:           "blog"
@@ -61,6 +62,8 @@ collections:
   people:
     output: true
     permalink: /people/:title/index.html
+
+
 
 
 # Reading Files
