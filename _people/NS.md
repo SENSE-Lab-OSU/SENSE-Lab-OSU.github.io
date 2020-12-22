@@ -8,10 +8,10 @@ joined: 2012
 
 ### Contact
 
-<i class="fa fa-envelope-o"></i>  `agarwal.270@buckeyemail.osu.edu`<br>
+<i class="fa fa-envelope-o"></i>  `sugavanam.30@buckeyemail.osu.edu`<br>
 <i class="fa fa-building"></i> 505 Dreese Lab <br>
 <!--<i class="fa fa-bar-chart"></i> [google scholar](https://scholar.google.com/citations?user=R3yolm0AAAAJ&hl=en) <br>-->
- [Website](https://tu-curious.github.io)
+
 
 <hr>
 
