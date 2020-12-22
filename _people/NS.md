@@ -1,9 +1,7 @@
 ---
-name: Tushar Agarwal
-position: grad
-avatar: tushar_agarwal.jpg
-twitter: tu_curious
-joined: 2018
+name: Nithin Sugavanam
+position: Researcher
+joined: 2012
 ---
 
 <img width="300" src="{{site.baseurl}}/images/people/{{page.avatar}}" data-action="zoom">
