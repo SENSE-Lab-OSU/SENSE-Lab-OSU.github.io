@@ -1,6 +1,6 @@
 ---
 name: Nithin Sugavanam
-position: Researcher
+position: postdoc
 joined: 2012
 ---
 
