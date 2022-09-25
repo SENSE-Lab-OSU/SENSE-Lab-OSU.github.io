@@ -1,7 +1,6 @@
 ---
 name: Yuyi Chang
 position: grad
-avatar: tushar_agarwal.jpg
 joined: 2022
 ---
 
